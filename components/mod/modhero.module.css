@@ -1,0 +1,120 @@
+.modHero{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.modLayout{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* ===========================
+   IMAGEN
+=========================== */
+
+.modImage{
+    position: relative;
+    width: 460px;
+    aspect-ratio: 16 / 9;
+    flex-shrink: 0;
+    border-radius: 1px;
+
+    /* Solo escritorio */
+    margin-left: 3rem;
+}
+
+/* ===========================
+   CONTENIDO
+=========================== */
+
+.modContent{
+    flex: 1;
+}
+
+/* ===========================
+   CABECERA
+=========================== */
+
+.modHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.modTitle{
+    flex: 1;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* ===========================
+   BOTÓN
+=========================== */
+
+.downloadBtn{
+    width: 150px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    border: 1px solid #16a34a;
+    border-radius: 6px;
+
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+
+    transition: .2s;
+}
+
+.downloadBtn:hover{
+    background: rgba(22,163,74,.15);
+}
+
+.downloadBtn:hover{
+    background: rgba(22,163,74,.15);
+}
+
+/* ===========================
+   MÓVIL
+=========================== */
+
+@media (max-width:1024px){
+
+    .modLayout{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .modImage{
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+    }
+
+    .modHeader{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .downloadBtn{
+        width: 150px;
+        height: 40px;
+    }
+
+    .modTitle{
+        font-size: 2rem;
+    }
+
+}

@@ -1,6 +1,27 @@
 import Link from "next/link";
 
-export default function ModCard({ mod }) {
+interface Mod {
+    id: number;
+    slug: string;
+    title: string;
+    description: string;
+    author: string;
+    image: string;
+    version: string;
+    platform: string;
+    type: string;
+    loader: string | null;
+    featured: boolean;
+    downloads: number;
+    download: string;
+    createdAt: string;
+}
+
+interface Props {
+    mod: Mod;
+}
+
+export default function ModCard({ mod }: Props) {
   
   console.log(mod);
   

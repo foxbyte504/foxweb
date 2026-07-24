@@ -19,7 +19,7 @@
     width: 460px;
     aspect-ratio: 16 / 9;
     flex-shrink: 0;
-    border-radius: 1px;
+    border-radius: 0px;
 
     /* Solo escritorio */
     margin-left: 3rem;
